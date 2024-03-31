@@ -66,7 +66,7 @@ let taskTag = null
 
 onMounted(readTodos)
 
-const url = process.env.VUE_APP_API_URL
+const url = "http://taskmaster-env.eba-rs9xvcxj.ap-northeast-2.elasticbeanstalk.com"
 
 function readTodos() {
     axios.get(url+'/api/read').then((res) => {
